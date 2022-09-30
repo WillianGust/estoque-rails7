@@ -10,33 +10,36 @@
       </ul>
     </div>
   <% end %>
+<form>
+  <div class="container">
+    <div class="col-sm-10 mb-3">
+      <%= form.label :nome, style: "display: block", class:"form-label" %>
+      <%= form.text_field :nome, class:"form-control" %>
+    </div>
 
-  <div>
-    <%= form.label :nome, style: "display: block" %>
-    <%= form.text_field :nome %>
-  </div>
+    <div class="col-sm-10 mb-3">
+      <%= form.label :tamanho, style: "display: block", class:"form-label"  %>
+      <%= form.text_field :tamanho, class:"form-control"  %>
+    </div>
 
-  <div>
-    <%= form.label :tamanho, style: "display: block" %>
-    <%= form.text_field :tamanho %>
-  </div>
+    <div class="col-sm-10 mb-3">
+      <%= form.label :peso, style: "display: block", class:"form-label"  %>
+      <%= form.text_field :peso, class:"form-control"  %>
+    </div>
 
-  <div>
-    <%= form.label :peso, style: "display: block" %>
-    <%= form.text_field :peso %>
-  </div>
+    <div class="col-sm-10 mb-3">
+      <%= form.label :quantidade, style: "display: block", class:"form-label"  %>
+      <%= form.number_field :quantidade, class:"form-control"  %>
+    </div>
 
-  <div>
-    <%= form.label :quantidade, style: "display: block" %>
-    <%= form.number_field :quantidade %>
-  </div>
+    <div class="col-sm-10 mb-3">
+      <%= form.label :valor, style: "display: block", class:"form-label"  %>
+      <%= form.text_field :valor, class:"form-control"  %>
+    </div>
 
-  <div>
-    <%= form.label :valor, style: "display: block" %>
-    <%= form.text_field :valor %>
+    <div class="mb-3">
+      <%= form.submit %>
+    </div>
   </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+</form>
 <% end %>
