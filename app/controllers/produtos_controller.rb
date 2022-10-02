@@ -8,6 +8,7 @@ class ProdutosController < ApplicationController
 
   # GET /produtos/1 or /produtos/1.json
   def show
+    index
   end
 
   # GET /produtos/new
