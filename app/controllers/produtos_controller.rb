@@ -8,7 +8,6 @@ class ProdutosController < ApplicationController
 
   # GET /produtos/1 or /produtos/1.json
   def show
-    
   end
 
   # GET /produtos/new
@@ -26,7 +25,7 @@ class ProdutosController < ApplicationController
 
     respond_to do |format|
       if @produto.save
-        format.html { redirect_to produto_url(@produto), notice: "Produto was successfully created." }
+        format.html { redirect_to produtos_path, notice: "Produto was successfully created." }
         format.json { render :show, status: :created, location: @produto }
       else
         format.html { render :new, status: :unprocessable_entity }
